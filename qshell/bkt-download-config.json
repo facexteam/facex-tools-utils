@@ -1,0 +1,12 @@
+{
+    "dest_dir": "./",
+    "bucket": "face-insight",
+    "prefix": "model",
+    "suffixes": "",
+    "referer": "",
+    "cdn_domain": "",
+    "log_file": "download.log",
+    "log_level": "info",
+    "log_rotate": 1,
+    "log_stdout": false
+}

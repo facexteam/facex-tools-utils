@@ -1,0 +1,21 @@
+{
+    "src_dir": "./",
+    "bucket": "test-datasets",
+    "file_list": "",
+    "key_prefix": "fgnet_mtcnn_aligned_112x112/",
+    "ignore_dir": false,
+    "overwrite": false,
+    "check_exists": false,
+    "check_hash": false,
+    "check_size": false,
+    "rescan_local": true,
+    "skip_file_prefixes": "test,demo,bin",
+    "skip_path_prefixes": "eval,other, features, ori, result, process, hello/,temp/",
+    "skip_fixed_strings": ".svn,.git,.pyc,nohup, upload.log, .exe",
+    "skip_suffixes": ".DS_Store,.exe",
+    "log_file": "upload.log",
+    "log_level": "info",
+    "log_rotate": 1,
+    "log_stdout": false,
+    "file_type": 0
+}
