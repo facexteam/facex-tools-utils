@@ -1,3 +1,5 @@
+#!/bin/bash
+
 bucket=$1
 file_filter=$2
 

@@ -1,4 +1,8 @@
-apt-get update && apt-get install -y --no-install-recommends \
+#!/bin/bash
+
+#apt-get update
+
+apt-get install -y --no-install-recommends \
         build-essential \
         cmake \
         git \
