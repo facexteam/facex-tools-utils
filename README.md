@@ -21,11 +21,11 @@ Some kubernetes tools.
 Tools for killing linux processes.
 
 ## qrsctl
-Qiniu qrsctl supports upload files to buckets in your qiniu account.
+Qiniu qrsctl uploads/downloads files to/from buckets in your qiniu account.
 
 Mainly used to upload single file.
 
 ## qshell
-Qiniu qshell (more powerful than qrsctl) supports upload files to buckets in your qiniu account.
+Qiniu qshell (more powerful than qrsctl) uploads/downloads files to/from buckets in your qiniu account.
 
 Mainly used to upload files under a root dir.
