@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ $# -lt 1 ]; then
     echo 'usage: kill_all_proc_with_name.sh <proceed_name> [<except_pid>]'
-    echo 'Please input a proceed name to kill'
+    echo 'Please input a process name to kill'
     exit
 fi
 
-echo "Kill all proceed with name contains string: $1"
+echo "Kill all process with name contains string: $1"
 echo "current ppid: $PPID"
 echo "current pid: $$"
 echo "current bash (subshell) pid: $BASHPID"
