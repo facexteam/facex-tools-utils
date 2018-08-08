@@ -31,7 +31,7 @@ Mainly used to upload files under a root dir.
 Some shell scripts.
 
 ### 1. kill_processes
-Tools for killing linux processes.
+Tools for killing Linux processes, especially kill all processes with the same name.
 
 ### 2. split_file
 Split a file into N splits.
