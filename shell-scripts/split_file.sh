@@ -6,4 +6,4 @@ if [ $# -lt 1 ]; then
     exit
 fi
 
-split -d -c $2 $1 $1-split-
+split -d -n $2 $1 $1-split-
