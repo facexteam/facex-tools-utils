@@ -17,9 +17,6 @@ Install caffe dependencies.
 ## k8s
 Some kubernetes tools.
 
-## kill_processes
-Tools for killing linux processes.
-
 ## qrsctl
 Qiniu qrsctl uploads/downloads files to/from buckets in your qiniu account.
 
@@ -29,3 +26,12 @@ Mainly used to upload single file.
 Qiniu qshell (more powerful than qrsctl) uploads/downloads files to/from buckets in your qiniu account.
 
 Mainly used to upload files under a root dir.
+
+## shell-scripts
+Some shell scripts.
+
+### 1. kill_processes
+Tools for killing linux processes.
+
+### 2. split_file
+Split a file into N splits.
