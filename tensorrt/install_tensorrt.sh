@@ -1,11 +1,20 @@
 #!/bin/bash
 USE_PYTHON3=true
 
+TRT_PATH=''
+if [[ $# gt 1 ]]; then
+TRT_PATH=$1
+fi
+
 pip install 'pycuda>=2017.1.1'
 
 # Install TensorRT from the Debian package.
-dpkg -i nv-tensorrt-repo-ubuntu1x04-cudax.x-trt5.x.x.x-rc-yyyymmdd_1-1_amd64.deb
-apt-key add /var/nv-tensorrt-repo-cudax.x-trt5.x.x.x-rc-yyyymmdd/7fa2af80.pub
+# dpkg -i nv-tensorrt-repo-ubuntu1x04-cudax.x-trt5.x.x.x-rc-yyyymmdd_1-1_amd64.deb
+# apt-key add /var/nv-tensorrt-repo-cudax.x-trt5.x.x.x-rc-yyyymmdd/7fa2af80.pub
+
+dpkg -i $TRT_PATH
+TRT_KEY=`ls /var/nv-tensorrt*/*.pub | grep 7fa2af80.pub`
+apt-key add $TRT_KEY
 
 # apt-get update
 # apt-get install tensorrt
