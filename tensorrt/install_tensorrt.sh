@@ -1,8 +1,9 @@
 #!/bin/bash
-USE_PYTHON3=true
+USE_PYTHON3=false
 
 TRT_PATH=''
-if [[ $# gt 1 ]]; then
+
+if [[ $# -gt 1 ]]; then
 TRT_PATH=$1
 fi
 
@@ -17,7 +18,7 @@ TRT_KEY=`ls /var/nv-tensorrt*/*.pub | grep 7fa2af80.pub`
 apt-key add $TRT_KEY
 
 # apt-get update
-# apt-get install tensorrt
+apt-get -y -q install tensorrt
 
 if [[ $USE_PYTHON3!=true ]]; then
 # If using Python 2.7:
@@ -25,29 +26,23 @@ if [[ $USE_PYTHON3!=true ]]; then
 # The following additional packages will be installed:
 #   python-libnvinfer
 
-apt-get update
-
-apt-get install tensorrt 
-apt-get install python-libnvinfer-dev 
-apt-get install uff-converter-tf
-
-dpkg -l | grep TensorRT
-
+apt-get install -y -q python-libnvinfer-dev
 # If using Python 3.x:
 else
 # apt-get install python3-libnvinfer-dev
 # The following additional packages will be installed:
 #   python3-libnvinfer
 
-apt-get update
-
-apt-get install tensorrt 
-apt-get install python3-libnvinfer-dev 
-apt-get install uff-converter-tf
-
-dpkg -l | grep TensorRT
+apt-get install -y -q python3-libnvinfer-dev
 
 fi
+
+apt-get -y -q install uff-converter-tf
+
+echo '====================='
+echo 'Installation finished'
+echo '---> List of installed packages'
+dpkg -l | grep TensorRT
 
 # In either case:
 # apt-get install uff-converter-tf
