@@ -2,7 +2,7 @@
 #threads=16
 threads=`nproc`
 
-if [[ $# -gt 2 ]]; then
+if [[ $# -gt 1 ]]; then
     threads=$1
     url=$2
 else
