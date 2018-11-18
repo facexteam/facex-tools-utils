@@ -1,0 +1,38 @@
+# 如果有需要，根据系统版本将 vivid 替换为 utopic, trusty, precise 等即可
+# 163, sohu, aliyun 三者开启其一即可，个人测试觉得 163 最快
+
+# aliyun
+deb http://mirrors.aliyun.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+# 163
+deb http://mirrors.163.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+# sohu
+deb http://mirrors.sohu.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-backports main restricted universe multiverse
