@@ -109,7 +109,7 @@ apt-get install docker-ce
 
 # a. List the versions available in your repo:
 
-apt-cache madison docker-ce
+# apt-cache madison docker-ce
 
 # docker-ce | 18.09.0~ce-0~ubuntu | https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
 # b. Install a specific version by its fully qualified package name, which is package name (docker-ce) “=” version string (2nd column), for example, docker-ce=18.03.0~ce-0~ubuntu.
