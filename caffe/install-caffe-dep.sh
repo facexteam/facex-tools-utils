@@ -17,4 +17,5 @@ apt-get install -y --no-install-recommends \
         libopencv-dev \
         libprotobuf-dev \
         libsnappy-dev \
-        protobuf-compiler
+        protobuf-compiler \
+        libopenblas-dev
