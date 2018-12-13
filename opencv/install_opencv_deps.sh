@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt-get update
 # Required Packages
 #     GCC 4.4.x or later
 #     CMake 2.8.7 or higher
