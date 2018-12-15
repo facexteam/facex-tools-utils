@@ -1,0 +1,5 @@
+[global]
+index-url = {index_url}
+trusted-host = {host_name} 
+               pypi.org
+extra-index-url = http://pypi.org/simple
