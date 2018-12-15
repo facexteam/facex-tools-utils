@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# pip install mxnet-cu90
+# pip install keras
 local_cache='./python-packages'
 
 if [[ $# -gt 1 ]]; then
@@ -9,4 +9,4 @@ fi
 
 echo 'local cache path: ' $local_cache
 
-pip install --find-links=$local_cache mxnet-cu90
+pip install --find-links=$local_cache keras

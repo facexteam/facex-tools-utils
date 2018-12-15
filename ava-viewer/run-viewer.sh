@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 service_name=viewer-zyf
 root_dir='./'

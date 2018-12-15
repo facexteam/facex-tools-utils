@@ -10,7 +10,7 @@
 # pip install tensorflow-gpu
 local_cache='./python-packages'
 
-if [[ $# -gt 2 ]]; then
+if [[ $# -gt 1 ]]; then
     local_cache=$2
 fi
 
