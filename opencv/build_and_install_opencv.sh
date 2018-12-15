@@ -15,9 +15,9 @@ BUILD_PATH=/opt/
 #     [optional] CUDA Toolkit 6.5 or higher
 #     The packages can be installed using a terminal and the following commands or by using Synaptic Manager:
 
-apt-get install build-essential #[compiler] 
-apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev #[required] 
-apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev #[optional] 
+apt-get install -y --no-install-recommends build-essential #[compiler] 
+apt-get install -y --no-install-recommends cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev #[required] 
+apt-get install -y --no-install-recommends python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev #[optional] 
 
 cd $BUILD_PATH
 git clone --depth=1 https://github.com/opencv/opencv.git
