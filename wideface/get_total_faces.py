@@ -25,12 +25,17 @@ def count_faces_in_dir(root_dir):
     for sub_dir in os.listdir(root_dir):
         sub_dir2 = osp.join(root_dir, sub_dir)
         if osp.isdir(sub_dir2):
+            sub_dir_cnt = 0
             for fn in os.listdir(sub_dir2):
                 if fn.endswith('.xml'):
                     fn = osp.join(sub_dir2, fn)
                     cnt = count_faces_in_xml(fn)
-                    print("---> In %s: %d  annotated faces" % (fn, cnt))
-                    total_faces += cnt
+                    # print("---> In %s: %d  annotated faces" % (fn, cnt))
+                    sub_dir_cnt += cnt
+
+            print("---> In dir %s: %d  annotated faces" %
+                  (sub_dir2, sub_dir_cnt))
+            total_faces += sub_dir_cnt
 
     return total_faces
 
@@ -41,7 +46,7 @@ if __name__ == '__main__':
     for _dir in data_dirs:
         total_faces = count_faces_in_dir(_dir)
 
-        print('---> %s: %d annotated faces' % (_dir, total_faces))
+        print('===> %s: %d annotated faces' % (_dir, total_faces))
 
     # """
     # Results:
